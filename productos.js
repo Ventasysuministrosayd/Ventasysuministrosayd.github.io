@@ -72,6 +72,15 @@ const productos = [
         emoji: "🎨",
         disponible: true
     }
+    {
+        id: 9,
+        nombre: "Tu producto",
+        categoria: "Tu categoría",
+        precio: 10.00,
+        descripcion: "Descripción del producto",
+        emoji: "🎯",
+        disponible: true
+    }
 ];
 
 // Exportar para usar en otros archivos
