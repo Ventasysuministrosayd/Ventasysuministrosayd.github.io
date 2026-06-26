@@ -7,7 +7,8 @@ const productos = [
         precio: 3.50,
         descripcion: "Tuercas de acero inoxidable M8",
         emoji: "🔩",
-        disponible: true
+        disponible: true,
+        estado: "disponible"
     },
     {
         id: 2,
@@ -16,7 +17,8 @@ const productos = [
         precio: 3.75,
         descripcion: "Pernos de alta resistencia M10",
         emoji: "🔧",
-        disponible: true
+        disponible: true,
+        estado: "disponible"
     },
     {
         id: 3,
@@ -25,7 +27,8 @@ const productos = [
         precio: 1.20,
         descripcion: "Arandelas de acero galvanizado",
         emoji: "⭕",
-        disponible: true
+        disponible: true,
+        estado: "disponible"
     },
     {
         id: 4,
@@ -34,7 +37,8 @@ const productos = [
         precio: 5.50,
         descripcion: "Cable conductor 2.5mm² x 100m",
         emoji: "⚡",
-        disponible: true
+        disponible: true,
+        estado: "disponible"
     },
     {
         id: 5,
@@ -43,7 +47,8 @@ const productos = [
         precio: 4.00,
         descripcion: "Interruptor de luz simple 10A",
         emoji: "🔌",
-        disponible: true
+        disponible: true,
+        estado: "disponible"
     },
     {
         id: 6,
@@ -52,7 +57,8 @@ const productos = [
         precio: 8.00,
         descripcion: "Tubo PVC 32mm x 3m",
         emoji: "🔷",
-        disponible: false
+        disponible: false,
+        estado: "agotado"
     },
     {
         id: 7,
@@ -61,7 +67,8 @@ const productos = [
         precio: 2.00,
         descripcion: "Codo PVC 32mm 90 grados",
         emoji: "⌐",
-        disponible: true
+        disponible: true,
+        estado: "disponible"
     },
     {
         id: 8,
@@ -70,7 +77,8 @@ const productos = [
         precio: 15.00,
         descripcion: "Pintura acrílica blanca 5L",
         emoji: "🎨",
-        disponible: true
+        disponible: true,
+        estado: "disponible"
     },
     {
         id: 9,
@@ -79,7 +87,8 @@ const productos = [
         precio: 10.00,
         descripcion: "Cámara de alta definición",
         emoji: "🎯",
-        disponible: false
+        disponible: false,
+        estado: "sobre-pedido"
     }
 ];
 
