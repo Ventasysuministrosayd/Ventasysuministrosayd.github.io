@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo A&D - Ventas y Suministros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Catálogo A&D</h1>
+            <p>Ventas y Suministros</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Filtros -->
+            <div class="filtros">
+                <input type="text" id="busqueda" placeholder="🔍 Buscar productos...">
+                <select id="categoria">
+                    <option value="">Todas las categorías</option>
+                </select>
+                <select id="ordenar">
+                    <option value="nombre">Ordenar por nombre</option>
+                    <option value="precio-asc">Precio menor a mayor</option>
+                    <option value="precio-desc">Precio mayor a menor</option>
+                </select>
+            </div>
+
+            <!-- Grid de productos -->
+            <div id="productos" class="grid-productos">
+                <!-- Los productos se cargarán aquí -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ventas y Suministros A&D. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="productos.js"></script>
+    <script src="catalogo.js"></script>
+</body>
+</html>
