@@ -74,12 +74,12 @@ const productos = [
     },
     {
         id: 9,
-        nombre: "Tu producto",
-        categoria: "Tu categoría",
+        nombre: "Cámara",
+        categoria: "Tecnologia",
         precio: 10.00,
-        descripcion: "Descripción del producto",
+        descripcion: "Cámara de alta definición",
         emoji: "🎯",
-        disponible: true
+        disponible: false
     }
 ];
 
