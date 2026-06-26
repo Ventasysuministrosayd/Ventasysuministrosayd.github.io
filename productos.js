@@ -71,7 +71,7 @@ const productos = [
         descripcion: "Pintura acrílica blanca 5L",
         emoji: "🎨",
         disponible: true
-    }
+    },
     {
         id: 9,
         nombre: "Tu producto",
