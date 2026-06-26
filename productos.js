@@ -4,7 +4,7 @@ const productos = [
         id: 1,
         nombre: "Tuercas M8",
         categoria: "Tornillería",
-        precio: 2.50,
+        precio: 3.50,
         descripcion: "Tuercas de acero inoxidable M8",
         emoji: "🔩",
         disponible: true
