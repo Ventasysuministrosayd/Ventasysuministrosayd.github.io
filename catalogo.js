@@ -55,7 +55,9 @@ function crearTarjetaProducto(producto) {
         : '<span class="disponibilidad agotado">✗ Agotado</span>';
     
     tarjeta.innerHTML = `
-        <div class="imagen-producto">${producto.emoji}</div>
+        <div class="imagen-producto">
+            <img src="${producto.imagen}" alt="${producto.nombre}" loading="lazy">
+        </div>
         <div class="info-producto">
             <div class="nombre-producto">${producto.nombre}</div>
             <span class="categoria-producto">${producto.categoria}</span>
