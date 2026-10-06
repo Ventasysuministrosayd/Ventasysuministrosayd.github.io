@@ -575,26 +575,6 @@ const productos = [
     },
     {
         id: 57,
-        nombre: "Uniforme Escolar",
-        categoria: "Escolares",
-        precio: 35.00,
-        descripcion: "Uniforme completo talla S a XL disponible",
-        emoji: "👕",
-        disponible: true,
-        estado: "disponible"
-    },
-    {
-        id: 58,
-        nombre: "Zapatos Escolares",
-        categoria: "Escolares",
-        precio: 28.50,
-        descripcion: "Zapatos negros cómodos talla 34-42",
-        emoji: "👞",
-        disponible: true,
-        estado: "disponible"
-    },
-    {
-        id: 59,
         nombre: "Lonchera Térmica",
         categoria: "Escolares",
         precio: 15.99,
@@ -604,7 +584,7 @@ const productos = [
         estado: "disponible"
     },
     {
-        id: 60,
+        id: 58,
         nombre: "Termo para Bebidas",
         categoria: "Escolares",
         precio: 12.75,
@@ -614,7 +594,7 @@ const productos = [
         estado: "disponible"
     },
     {
-        id: 61,
+        id: 59,
         nombre: "Regla Plástica",
         categoria: "Escolares",
         precio: 1.25,
@@ -624,7 +604,7 @@ const productos = [
         estado: "disponible"
     },
     {
-        id: 62,
+        id: 60,
         nombre: "Compás Escolar",
         categoria: "Escolares",
         precio: 3.50,
@@ -634,7 +614,7 @@ const productos = [
         estado: "disponible"
     },
     {
-        id: 63,
+        id: 61,
         nombre: "Calculadora Científica",
         categoria: "Escolares",
         precio: 18.99,
@@ -644,7 +624,7 @@ const productos = [
         estado: "disponible"
     },
     {
-        id: 64,
+        id: 62,
         nombre: "Diccionario Escolar",
         categoria: "Escolares",
         precio: 14.50,
@@ -654,12 +634,32 @@ const productos = [
         estado: "disponible"
     },
     {
-        id: 65,
+        id: 63,
         nombre: "Pizarrón Magnético",
         categoria: "Escolares",
         precio: 9.99,
         descripcion: "Pizarra blanca 60x40cm con marcadores incluidos",
         emoji: "🖊️",
+        disponible: true,
+        estado: "disponible"
+    },
+    {
+        id: 64,
+        nombre: "Cuaderno Escolar 100 hojas",
+        categoria: "Escolares",
+        precio: 2.25,
+        descripcion: "Cuaderno de raya con 100 hojas calidad premium",
+        emoji: "📕",
+        disponible: true,
+        estado: "disponible"
+    },
+    {
+        id: 65,
+        nombre: "Carpeta Escolar Plastico",
+        categoria: "Escolares",
+        precio: 3.75,
+        descripcion: "Carpeta plástica tipo clip con bolsillos internos",
+        emoji: "📂",
         disponible: true,
         estado: "disponible"
     }
