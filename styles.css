@@ -170,10 +170,17 @@ main {
     width: 100%;
     height: 200px;
     background: linear-gradient(135deg, var(--azul) 0%, var(--rojo) 100%);
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+}
+
+.imagen-producto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .info-producto {
@@ -292,7 +299,6 @@ footer {
 
     .imagen-producto {
         height: 180px;
-        font-size: 2.5rem;
     }
 }
 
@@ -355,7 +361,6 @@ footer {
 
     .imagen-producto {
         height: 150px;
-        font-size: 2rem;
     }
 
     .info-producto {
