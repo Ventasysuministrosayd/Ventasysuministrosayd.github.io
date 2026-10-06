@@ -4,10 +4,24 @@
     box-sizing: border-box;
 }
 
+/* 1. Contenedor que se queda fijo al hacer scroll */
+.filtros {
+    position: -webkit-sticky; /* Soporte para Safari */
+    position: sticky;
+    top: 20px; /* Distancia desde la parte superior de la pantalla */
+    z-index: 100; /* Asegura que quede por encima de otros elementos */
+    background-color: white; /* Evita que el texto de abajo se transluzca */
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Estilos solo para simular una página larga */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f5f5;
     color: #333;
+    height: 2000px; /* Genera scroll vertical */
+    padding: 20px;
 }
 
 /* Header */
