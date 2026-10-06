@@ -23,7 +23,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg);
     color: var(--text);
-    padding-top: 90px;
+    padding-top: 70px;
 }
 
 .container {
@@ -51,7 +51,7 @@ header p {
     opacity: 0.92;
 }
 
-/* Barra flotante de filtros - más compacta y premium */
+/* Barra flotante de filtros - COMPACTA EN UNA SOLA FILA */
 .filtros {
     position: fixed;
     top: 0;
@@ -63,29 +63,63 @@ header p {
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.04);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-    padding: 0.7rem 0;
+    padding: 0.5rem 0;
 }
 
 .filtros .container {
     display: grid;
-    grid-template-columns: minmax(0, 2.2fr) minmax(180px, 1fr) minmax(180px, 1fr);
-    gap: 0.75rem;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 0.5rem;
     align-items: center;
+}
+
+.campo-filtro {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 38px;
+}
+
+.campo-icono {
+    position: absolute;
+    left: 10px;
+    font-size: 1.1rem;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .filtros input,
 .filtros select {
     width: 100%;
-    min-height: 46px;
-    padding: 0.72rem 0.9rem;
+    height: 38px;
+    padding: 0.5rem 0.8rem 0.5rem 2.5rem;
     border: 1px solid rgba(0, 102, 204, 0.18);
-    border-radius: 12px;
-    font-size: 0.94rem;
+    border-radius: 10px;
+    font-size: 0.88rem;
     background: rgba(255, 255, 255, 0.96);
     color: var(--text);
     transition: all 0.2s ease;
     font-family: inherit;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.campo-busqueda input {
+    padding-left: 2.8rem;
+}
+
+.select-limpio {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image:
+        linear-gradient(45deg, transparent 50%, var(--azul) 50%),
+        linear-gradient(135deg, var(--azul) 50%, transparent 50%);
+    background-position:
+        calc(100% - 12px) calc(50% - 2px),
+        calc(100% - 8px) calc(50% - 2px);
+    background-size: 4px 4px, 4px 4px;
+    background-repeat: no-repeat;
+    padding-right: 2rem;
 }
 
 .filtros input::placeholder {
@@ -217,32 +251,38 @@ footer {
 
 @media (max-width: 1024px) {
     .filtros .container {
-        grid-template-columns: 1.5fr 1fr;
-    }
-
-    .filtros select:last-child {
-        grid-column: 1 / -1;
+        grid-template-columns: 2fr 1fr 1fr;
     }
 }
 
 @media (max-width: 768px) {
     body {
-        padding-top: 125px;
+        padding-top: 75px;
     }
 
     .filtros {
-        padding: 0.6rem 0;
+        padding: 0.4rem 0;
     }
 
     .filtros .container {
-        grid-template-columns: 1fr;
-        gap: 0.65rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.4rem;
+    }
+
+    .campo-filtro {
+        height: 36px;
     }
 
     .filtros input,
     .filtros select {
-        min-height: 44px;
-        font-size: 1rem;
+        height: 36px;
+        font-size: 0.85rem;
+        padding: 0.4rem 0.7rem 0.4rem 2.3rem;
+    }
+
+    .campo-icono {
+        font-size: 0.95rem;
+        left: 8px;
     }
 
     .grid-productos {
@@ -258,19 +298,21 @@ footer {
 
 @media (max-width: 480px) {
     body {
-        padding-top: 135px;
+        padding-top: 80px;
     }
 
     .container {
-        padding: 0 15px;
+        padding: 0 12px;
     }
 
     .filtros {
-        padding: 0.5rem 0;
+        padding: 0.35rem 0;
     }
 
     .filtros .container {
-        padding: 0 15px;
+        padding: 0 12px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.3rem;
     }
 
     header h1 {
@@ -281,10 +323,29 @@ footer {
         font-size: 0.95rem;
     }
 
+    .campo-filtro {
+        height: 34px;
+    }
+
     .filtros input,
     .filtros select {
-        border-radius: 10px;
-        min-height: 42px;
+        height: 34px;
+        border-radius: 8px;
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem 0.3rem 2.1rem;
+    }
+
+    .campo-icono {
+        font-size: 0.9rem;
+        left: 6px;
+    }
+
+    .select-limpio {
+        background-position:
+            calc(100% - 8px) calc(50% - 1px),
+            calc(100% - 5px) calc(50% - 1px);
+        background-size: 3px 3px, 3px 3px;
+        padding-right: 1.5rem;
     }
 
     .grid-productos {
