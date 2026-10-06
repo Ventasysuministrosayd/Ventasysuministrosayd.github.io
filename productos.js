@@ -665,18 +665,21 @@ const productos = [
     }
 ];
 
-const imagenesPorCategoria = {
-    Oficina: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80",
-    "Papelería": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-    Aseo: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80",
-    Cafetería: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80",
-    Tecnología: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
-    "Piñatería": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80",
-    Escolares: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80"
+const generarImagenProducto = (producto) => {
+    const seed = encodeURIComponent(
+        producto.nombre
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '') || 'producto'
+    );
+
+    return `https://picsum.photos/seed/${seed}/800/600`;
 };
 
 productos.forEach((producto) => {
-    producto.imagen = producto.imagen || imagenesPorCategoria[producto.categoria] || "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80";
+    producto.imagen = producto.imagen || generarImagenProducto(producto);
 });
 
 if (typeof module !== 'undefined' && module.exports) {
