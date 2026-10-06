@@ -18,15 +18,26 @@
         <div class="container">
             <!-- Filtros -->
             <div class="filtros">
-                <input type="text" id="busqueda" placeholder="🔍 Buscar productos...">
-                <select id="categoria" class="select-limpio">
-                    <option value="">Todas las categorías</option>
-                </select>
-                <select id="ordenar" class="select-limpio">
-                    <option value="nombre">Ordenar por nombre</option>
-                    <option value="precio-asc">Precio menor a mayor</option>
-                    <option value="precio-desc">Precio mayor a menor</option>
-                </select>
+                <div class="campo-filtro campo-busqueda">
+                    <span class="campo-icono">🔎</span>
+                    <input type="text" id="busqueda" placeholder="Buscar productos...">
+                </div>
+
+                <div class="campo-filtro">
+                    <span class="campo-icono">📂</span>
+                    <select id="categoria" class="select-limpio">
+                        <option value="">Todas las categorías</option>
+                    </select>
+                </div>
+
+                <div class="campo-filtro">
+                    <span class="campo-icono">📌</span>
+                    <select id="ordenar" class="select-limpio">
+                        <option value="nombre">Más relevantes</option>
+                        <option value="precio-asc">Precio: menor a mayor</option>
+                        <option value="precio-desc">Precio: mayor a menor</option>
+                    </select>
+                </div>
             </div>
 
             <!-- Grid de productos -->
