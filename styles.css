@@ -53,7 +53,7 @@ header p {
 
 /* Barra flotante de filtros - COMPACTA EN UNA SOLA FILA */
 .filtros {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
