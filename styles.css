@@ -53,7 +53,7 @@ header p {
 
 /* Barra flotante de filtros - COMPACTA EN UNA SOLA FILA */
 .filtros {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -90,7 +90,7 @@ header p {
 
 .filtros input,
 .filtros select {
-    width: 100%;
+    width: 15%;
     height: 38px;
     padding: 0.5rem 0.8rem 0.5rem 2.5rem;
     border: 1px solid rgba(0, 102, 204, 0.18);
