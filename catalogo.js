@@ -62,7 +62,6 @@ function crearTarjetaProducto(producto) {
             <div class="nombre-producto">${producto.nombre}</div>
             <span class="categoria-producto">${producto.categoria}</span>
             <p class="descripcion-producto">${producto.descripcion}</p>
-            <div class="precio-producto">$${producto.precio.toFixed(2)}</div>
             ${disponibilidad}
         </div>
     `;
