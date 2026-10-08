@@ -318,7 +318,7 @@ footer p {
     }
 
     .filtros {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 0.5rem;
     }
 
@@ -364,6 +364,9 @@ footer p {
 }
 
 @media (max-width: 360px) {
+    .filtros {
+        grid-template-columns: 1fr 1fr;
+    }
     .grid-productos {
         grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
         gap: 0.6rem;
