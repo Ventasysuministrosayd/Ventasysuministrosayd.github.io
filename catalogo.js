@@ -50,10 +50,6 @@ function crearTarjetaProducto(producto) {
     const tarjeta = document.createElement('div');
     tarjeta.className = 'tarjeta-producto';
     
-    const disponibilidad = producto.disponible 
-        ? '<span class="disponibilidad disponible">✓ Disponible</span>'
-        : '<span class="disponibilidad agotado">✗ Agotado</span>';
-    
     tarjeta.innerHTML = `
         <div class="imagen-producto">
             <img src="${producto.imagen}" alt="${producto.nombre}" loading="lazy">
@@ -62,7 +58,6 @@ function crearTarjetaProducto(producto) {
             <div class="nombre-producto">${producto.nombre}</div>
             <span class="categoria-producto">${producto.categoria}</span>
             <p class="descripcion-producto">${producto.descripcion}</p>
-            ${disponibilidad}
         </div>
     `;
     
