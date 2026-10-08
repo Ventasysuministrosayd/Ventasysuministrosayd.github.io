@@ -3,19 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="img/logo.png">
     <title>Catálogo A&D - Ventas y Suministros A&D</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Ventas y Suministros A&D</h1>
-            <p>Catálogo</p>
-        </div>
-    </header>
-
-    <main>
-        <div class="container">
+            <img src="img/logo.png" class="logo">
+            <h1>Catálogo</h1>
             <!-- Filtros -->
             <div class="filtros">
                 <div class="campo-filtro campo-busqueda">
@@ -29,17 +25,12 @@
                         <option value="">Todas las categorías</option>
                     </select>
                 </div>
-
-                <div class="campo-filtro">
-                    <span class="campo-icono">📌</span>
-                    <select id="ordenar" class="select-limpio">
-                        <option value="nombre">Más relevantes</option>
-                        <option value="precio-asc">Precio: menor a mayor</option>
-                        <option value="precio-desc">Precio: mayor a menor</option>
-                    </select>
-                </div>
             </div>
+        </div>
+    </header>
 
+    <main>
+        <div class="container">
             <!-- Grid de productos -->
             <div id="productos" class="grid-productos">
                 <!-- Los productos se cargarán aquí -->
